@@ -1,10 +1,10 @@
 <?php 
-	abstract class Move{ //move abstract class
-		abstract protected function move_up($floor);
-		abstract protected function move_down($floor);
+	interface Move{ //move abstract class
+		public function move_up($floor);
+		public function move_down($floor);
 	}
 	
-	class Engine extends Move{ //engine class
+	class Engine implements  Move{ //engine class
 		public function move_up($floor){
 			return ++$floor;
 		}

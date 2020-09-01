@@ -11,7 +11,7 @@
 				echo "Incorect person floor!<br>";
 			}
 		}
-		public function move_to(Elevator_Interface $interface, $end_floor){ // method move for person
+		public function move_to(Elevator_GUI $interface, $end_floor){ // method move for person
 			$interface->press_start_button($this->floor);
 			if($end_floor > 0 && $end_floor < 25){
 				$interface->press_button($end_floor);

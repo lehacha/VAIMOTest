@@ -1,5 +1,5 @@
 <?php 
-	class Elevator_Interface{ //Elevator Interface class
+	class Elevator_GUI{ //Elevator GUI class
 		private $elevator;
 		
 		public function __construct($elevator) { //constructor
